@@ -1,22 +1,22 @@
 {
-  "name": "@uniswap/v2-periphery",
+  "name": "@eliteswap/v2-periphery",
   "version": "1.1.0-beta.0",
-  "description": "🎚 Peripheral smart contracts for interacting with Uniswap V2",
+  "description": "🎚 Peripheral smart contracts for interacting with Elite Swap V2",
   "engines": {
     "node": ">=10"
   },
-  "homepage": "https://uniswap.org",
+  "homepage": "https://eliteswap.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Uniswap/uniswap-v2-periphery"
+    "url": "git+https://github.com/EthereumEliteswap/eliteswap-v2-periphery.git"
   },
   "files": [
     "build",
     "contracts"
   ],
   "dependencies": {
-    "@uniswap/lib": "1.1.1",
-    "@uniswap/v2-core": "1.0.0"
+    "@eliteswap/lib": "2.0.5",
+    "@eliteswap/v2-core": "1.0.3"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
@@ -36,13 +36,20 @@
     "lint": "yarn prettier ./test/*.ts --check",
     "lint:fix": "yarn prettier ./test/*.ts --write",
     "clean": "rimraf ./build/",
-    "copy-v1-artifacts": "ncp ./buildV1 ./build",
     "precompile": "yarn clean",
     "compile": "waffle .waffle.json",
-    "postcompile": "yarn copy-v1-artifacts",
     "pretest": "yarn compile",
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/EthereumEliteswap/eliteswap-v2-periphery/issues"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": ""
 }
