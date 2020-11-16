@@ -1,6 +1,7 @@
 {
   "compilerVersion": "./node_modules/solc",
   "outputType": "all",
+  "sourceDirectory": "/home/odyomin/eliteswap/eliteswap-v2-periphery/flattened_contracts/",
   "compilerOptions": {
     "outputSelection": {
       "*": {
@@ -9,8 +10,7 @@
           "evm.deployedBytecode.object",
           "abi",
           "evm.bytecode.sourceMap",
-          "evm.deployedBytecode.sourceMap",
-          "metadata"
+          "evm.deployedBytecode.sourceMap"
         ],
         "": ["ast"]
       }

@@ -15,8 +15,9 @@
     "contracts"
   ],
   "dependencies": {
-    "@eliteswap/lib": "2.0.5",
-    "@eliteswap/v2-core": "1.0.3"
+    "@eliteswap/lib": "^2.0.0",
+    "@eliteswap/v2-core": "^1.0.0",
+    "@truffle/hdwallet-provider": "^1.2.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",
