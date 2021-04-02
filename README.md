@@ -5,7 +5,7 @@
 
 In-depth documentation on Eliteswap V2 is available at [eliteswap.org](https://eliteswap.org/docs).
 
-The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@eliteswap/v2-periphery@latest/).
+The built contract artifacts can be browsed via [unpkg.com](https://unpkg.com/browse/@eliteswap/v2-periphery@2.1.1/).
 
 # Local Development
 

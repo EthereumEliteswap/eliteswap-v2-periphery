@@ -369,7 +369,7 @@ library EliteswapV2Library {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'64f97409dbeefccef0bb9f1a9040b723d266b70ef5ae1769cb7e3457f8d0542a' // init code hash
+                hex'23f086c81372ca3fecb7b1baf4ae2b31a0657957e4e012eefa78c9283a75524e' // init code hash
             ))));
     }
 

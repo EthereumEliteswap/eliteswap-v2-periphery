@@ -1,17 +1,15 @@
 const EliteswapV2Router02 = artifacts.require("EliteswapV2Router02");
 
-// addresses[0]: 0x2D942Bc34754DD9A1aB2Da986fC545A0dAFF2cfB (Eliteswap: Deployer 2)
-
 module.exports = async function (deployer, network, addresses) {
   let wethAddress;
   let factoryAddress;
   
-  if (network === 'mainnet' || network === 'mainnet-fork') {
-    wethAddress = await '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2';
-    factoryAddress = await '0x81c27D1A0a6413c6A6d6d8e54B0A9C869d16771C';
-  } else if (network === 'ropsten' || network === 'ropsten-fork') {
-    wethAddress = await '0xc778417E063141139Fce010982780140Aa0cD5Ab';
-    factoryAddress = await '0xb4e0d45B7f7314e540285C2dd300576B2a26195e';
+  if (network === 'bsc_mainnet' || network === 'bsc_mainnet-fork') {
+    wethAddress = await '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+    factoryAddress = await '0x3Ce6feac2DC11a8799dC2a4B9434c5943E1c69EE';
+  } else if (network === 'bsc_testnet' || network === 'bsc_testnet-fork') {
+    wethAddress = await '0xaE8E19eFB41e7b96815649A6a60785e1fbA84C1e';
+    factoryAddress = await '0x7E4a14EeF571ebbe2AE71659Cd7d7d963DB13Ea0';
   } else {
     throw new Error('No Elite Swap on this network')
   }

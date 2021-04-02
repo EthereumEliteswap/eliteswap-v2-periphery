@@ -1,7 +1,7 @@
 {
   "compilerVersion": "./node_modules/solc",
   "outputType": "all",
-  "sourceDirectory": "/home/odyomin/eliteswap/eliteswap-v2-periphery/flattened_contracts/",
+  "sourceDirectory": "/tmp/eliteswap/deploy/eliteswap-v2-periphery/flattened_contracts/",
   "compilerOptions": {
     "outputSelection": {
       "*": {
